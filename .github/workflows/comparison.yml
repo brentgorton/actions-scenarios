@@ -16,18 +16,26 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: Printing
         run: |
+          to_deploy=
           for o in ${{ steps.files.outputs.added_modified }}; do
             if [[ "$o" == *.cls ]]
             then
-              echo "$o is a class"
+              if [ -z "$to_deploy"]
+              then
+                echo "First file"
+              else
+                to_deploy="$to_deploy,"
+              fi
+              to_deploy="$to_deploy$o"
               if test -f "${o/.cls/Test.cls}";
               then
-                echo "$o has a test class"
+                to_deploy="$to_deploy,${o/.cls/Test.cls}"
               fi
             else
               echo "$o is not a class"
             fi
           done
+          echo "$to_deploy"
           echo "All:"
           echo "${{ steps.files.outputs.all }}"
           echo "Added:"
