@@ -47,8 +47,8 @@ jobs:
               echo "$o is not a class"
             fi
           done
-          echo "to_deploy=$to_deploy >> $GITHUB_OUTPUT"
-          echo "tests=$tests >> $GITHUB_OUTPUT"
+          echo "::set-output name=to_deploy::$to_deploy"
+          echo "::set-output name=tests::$tests"
 
           echo "$to_deploy"
           echo "All:"
