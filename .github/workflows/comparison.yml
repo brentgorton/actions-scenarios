@@ -68,4 +68,4 @@ jobs:
     needs: [ files ]
     steps:
       - run: |
-        echo "sfdx force source deploy -p ${{needs.files.outputs.to_deploy}} -l RunSpecifiedTests -r ${{needs.files.outputs.tests}}"
+          echo "sfdx force source deploy -p ${{needs.files.outputs.to_deploy}} -l RunSpecifiedTests -r ${{needs.files.outputs.tests}}"
