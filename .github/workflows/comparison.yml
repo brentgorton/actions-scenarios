@@ -20,6 +20,10 @@ jobs:
             if [[ "$o" == *.cls ]]
             then
               echo "$o is a class"
+              if test -f "${o/.cls/Test.cls}";
+              then
+                echo "$o has a test class"
+              fi
             else
               echo "$o is not a class"
             fi
