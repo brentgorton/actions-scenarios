@@ -41,7 +41,8 @@ jobs:
                 else
                   tests="$tests,"
                 fi
-                tests="$tests${o/.cls/Test.cls}"
+                testFile=`basename ${o/.cls/Test.cls} .cls`
+                tests="$tests$testFile"
               fi
             else
               echo "$o is not a class"
