@@ -8,7 +8,7 @@ on:
 
 jobs:
   sfdx-code-scan:
-    name: Apex Code Quality
+    name: Static Analysis
     runs-on: ubuntu-latest
     permissions: write-all
     steps:
