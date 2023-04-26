@@ -1,4 +1,4 @@
-public with sharing class ExampleClass {
+public class ExampleClass {
     public String myString {get;set;}
     public ExampleClass() {
         myString = 'Hello World';
@@ -34,5 +34,17 @@ public with sharing class ExampleClass {
 
     public void doSomethingElseAgainAgainAgainAgainAgainAgain() {
         myString = 'Hello World Again Again Again Again Again';
+        List<Account> accounts = [SELECT Id FROM Account LIMIT 1];
+        insert new Account();
+    }
+
+    public void doSomethingElseAgainAgainAgainAgainAgainAgainAgain() {
+        myString = 'Goodbye World Again Again Again Again Again Again';
+    }
+
+    public void doSomethingElseAgainAgainAgainAgainAgainAgainAgainAgain() {
+        try{
+            myString = 'Hello World Again Again Again Again Again Again Again';
+        } catch(Exception e) {}
     }
 } 
