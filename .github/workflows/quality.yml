@@ -15,7 +15,7 @@ jobs:
       - name: Check out Git repository
         uses: actions/checkout@v3
       - name: Code Review
-        uses: brentgorton/sfdx-code-review-action@v0.2.0
+        uses: brentgorton/sfdx-code-review-action@annotations
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
