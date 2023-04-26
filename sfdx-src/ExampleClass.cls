@@ -3,4 +3,4 @@ public with sharing class ExampleClass {
     public ExampleClass() {
         myString = 'Hello World';
     }
-}
+} 
