@@ -11,5 +11,8 @@
   "bugs": {
     "url": "https://github.com/brentgorton/actions-scenarios/issues"
   },
-  "homepage": "https://github.com/brentgorton/actions-scenarios#readme"
+  "homepage": "https://github.com/brentgorton/actions-scenarios#readme",
+  "dependencies": {
+    "@actions/core": "^1.10.0"
+  }
 }
