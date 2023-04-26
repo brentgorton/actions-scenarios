@@ -1,0 +1,15 @@
+{
+  "name": "actions-scenarios",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brentgorton/actions-scenarios.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brentgorton/actions-scenarios/issues"
+  },
+  "homepage": "https://github.com/brentgorton/actions-scenarios#readme"
+}
