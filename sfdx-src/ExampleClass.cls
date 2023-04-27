@@ -47,4 +47,4 @@ public class ExampleClass {
             myString = 'Hello World Again Again Again Again Again Again Again';
         } catch(Exception e) {}
     }
-} 
+}
